@@ -1,11 +1,7 @@
-#include <stdio.h>
+#includ < stdio.h >
 /**
- *
- * main - Entry point.
- * Description: C program that prints exactly "Programming is like building a,
- * multilingual puzzle.
- * Return: Always 0 (Success).
- *
+ * main-string
+ * Return: 0 if exited properly, non zero otherwise
  * */
 int main(void)
 {
