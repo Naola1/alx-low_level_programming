@@ -1,4 +1,4 @@
-#includ < stdio.h >
+#include <stdio.h>
 /**
  * main-string
  * Return: 0 if exited properly, non zero otherwise
