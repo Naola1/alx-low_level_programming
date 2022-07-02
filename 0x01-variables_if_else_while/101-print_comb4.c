@@ -18,8 +18,11 @@ int main(void)
 					putchar (i);
 					putchar (j);
 					putchar (n);
+				if (i != 55)
+				{
 					putchar (44);
 					putchar (32);
+				}
 				}
 			}
 		}
