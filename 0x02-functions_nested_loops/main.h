@@ -1,23 +1,23 @@
-0 int _putchar(char c);
+int _putchar(char c);
 
-1 void print_alphabet(void);
+void print_alphabet(void);
 
-2 void print_alphabet_x10(void);
+void print_alphabet_x10(void);
 
-3 int _islower(int c);
+int _islower(int c);
 
-4 int _islower(int c);
+int _islower(int c);
 
-5 int print_sign(int n);
+int print_sign(int n);
 
-6 int _abs(int);
+int _abs(int);
 
-7 int print_last_digit(int);
+int print_last_digit(int);
 
-8 void jack_bauer(void);
+void jack_bauer(void);
 
-9 void jack_bauer(void);
+void jack_bauer(void);
+ 
+int add(int, int);
 
-10 int add(int, int);
-
-11 void print_to_98(int n);
+void print_to_98(int n);
