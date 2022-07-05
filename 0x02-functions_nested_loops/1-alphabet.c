@@ -1,16 +1,8 @@
-#include <unistd.h>
 #include "main.h"
 /**
- * main-calling function
  * print_alphabet - prints lowercase alphabet
  * Result : success always 0
  **/
-void print_alphabet(void);
-int main(void)
-	{
-	print_alphabet();
-	return (0);
-	}
 void print_alphabet(void)
 	{
 	char i;
