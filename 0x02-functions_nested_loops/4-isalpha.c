@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _islower-check for alphabet
+ * _isalpha - Check for alphabet
  * @c:ASCII code
  * Return:success always 1
  **/
-int _islower(int c)
+int _isalpha(int c)
 {
 	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	{
