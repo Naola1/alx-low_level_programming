@@ -14,7 +14,7 @@ char *cap_string(char *s)
 		{
 			s[i + 1] = s[i + 1] - 32;
 		}
-		else if (s[i] == 0)
+		else if (i == 0)
 		{
 			s[i] = s[i] - 32;
 		}
