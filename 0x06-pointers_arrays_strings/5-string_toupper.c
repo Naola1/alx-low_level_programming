@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  *string_toupper-lowercase to uppercase converter
- *@char*:string
+ *@s :string prameter
  *Return:uppercas string
  */
 char *string_toupper(char *s)
@@ -15,4 +15,5 @@ char *string_toupper(char *s)
 			s[i] = s[i] - 32;
 		}
 	}
+	return (s);
 }
