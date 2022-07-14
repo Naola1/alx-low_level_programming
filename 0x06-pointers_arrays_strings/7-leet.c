@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * leet:a function that encodes a string
+ * leet-a function that encodes a string
  * @s:string parameter
  * Return:string
  */
@@ -17,8 +17,8 @@ char *leet(char *s)
 		while (i < l)
 		{
 			if (s[a] == tr[i] || s[a] - 32 == tr[i])
-					s[a] = trw[i];
-						i++;
+				s[a] = trw[i];
+				i++;
 		}
 		a++;
 	}
