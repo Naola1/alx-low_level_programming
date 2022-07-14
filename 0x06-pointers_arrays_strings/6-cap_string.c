@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- *cap_string-lowercase to uppercase converter
+ *cap_string- capitalizes all words of a string.
  *@s :string prameter
  *Return:uppercas string
  */
@@ -10,9 +10,9 @@ char *cap_string(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] >= 65 && s[i] <= 90)
+		if (s[i] == ' ' || s[i] == '.')
 		{
-			s[i] = s[i] + 32;
+			s[i + 1] = s[i + 1] + 32;
 		}
 
 	}
