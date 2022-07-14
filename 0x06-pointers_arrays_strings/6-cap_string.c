@@ -12,7 +12,7 @@ char *cap_string(char *s)
 	{
 		if (s[i] == ' ' || s[i] == '.')
 		{
-			s[i + 1] = s[i + 1] + 32;
+			s[i + 1] = s[i + 1] - 32;
 		}
 		else if (s[i] == 0)
 		{
