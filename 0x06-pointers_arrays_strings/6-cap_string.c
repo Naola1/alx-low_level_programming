@@ -6,24 +6,23 @@
  */
 char *cap_string(char *s)
 {
-	int i;
 	char sep[13] = {32, 9, '\n', ',', ';', '.', '!', '?',
 '"', '(', ')', '{', '}' };
+	int i, a = 0;
+	int len = 13;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i])
 	{
-		if (s[i] >= 97 && s[i] <= 122)
-		{
-		if (s[i] <= sep[13] && s[i] >= sep[0])
-		{
-			s[i + 1] = s[i + 1] - 32;
-		}
-		else if (i == 0)
-		{
-			s[i] = s[i] - 32;
-		}
-		}
+		i = 0;
 
+		while (i < len)
+		{
+			if ((a == 0 || s[a - 1] == sep[i] &&
+		(s[a] >= 97 && s[a] <= 122))
+			s[a] = s[a] - 32;
+			i++;
+		}
+			a++;
 	}
 	return (s);
 }
