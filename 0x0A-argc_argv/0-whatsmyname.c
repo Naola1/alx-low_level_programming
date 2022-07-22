@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- *print_name-program that prints its name
+ *main-program that prints its name
  *@argc:integer parameter
  *@argv:1D array parameter
  *Return:0 always success
