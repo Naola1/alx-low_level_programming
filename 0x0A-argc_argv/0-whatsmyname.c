@@ -5,9 +5,8 @@
  *@argv:1D array parameter
  *Return:0 always success
  */
-int print_name(int argc, char *argv[])
+int main(int argc _attribute_((unused)), char *argv[])
 {
-	(void)argc;
 	printf("%s\n", *argv);
 	return (0);
 }
