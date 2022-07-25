@@ -8,7 +8,7 @@
 */
 char *create_array(unsigned int size, char c)
 {
-	int* ptr;
+	char* ptr;
 	int i;
 
 ptr = malloc(size * (sizeof(char)));
@@ -20,7 +20,7 @@ ptr = malloc(size * (sizeof(char)));
 		ptr[i] = c;
 		i++;
 		}
-		ptr[i] = '/0';
+		ptr[i] = '\0';
 return (ptr);
 }
 
