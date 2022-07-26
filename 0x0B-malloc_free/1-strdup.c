@@ -14,7 +14,7 @@ int i, len;
 char *dest;
 
 len = strlen(str);
-	if (len == 0)
+	if (str == 0)
 		return (NULL);
 dest = malloc(len * (sizeof(char)));
 	while (i >= 0)
