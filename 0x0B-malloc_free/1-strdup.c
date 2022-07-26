@@ -19,6 +19,8 @@ char *s;
 	while (str[i])
 		i++;
 s = (char *)malloc(i * sizeof(char) + 1);
+	if (s == 0)
+		return (NULL);
 	while (j < i)
 	{
 		s[j] = str[j];
