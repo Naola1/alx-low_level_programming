@@ -14,9 +14,10 @@ int i = 0;
 int len = 0;
 char *dest;
 
+len = strlen(str);
 	if (str == 0)
 		return (NULL);
-dest = malloc(len * (sizeof(char)) + 1);
+dest = malloc(len * (sizeof(char)));
 	while (i >= 0)
 	{
 		*(dest + i) = *(str + i);
