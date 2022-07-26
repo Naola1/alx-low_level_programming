@@ -17,13 +17,12 @@ char *dest;
 len = strlen(str);
 	if (str == 0)
 		return (NULL);
-dest = malloc(len * (sizeof(char)));
-	while (i >= 0)
+dest =(char *)malloc(len * (sizeof(char)));
+	while (i < 0)
 	{
 		*(dest + i) = *(str + i);
-		if (*(str + i) == '\0')
-			break;
 		i++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }
