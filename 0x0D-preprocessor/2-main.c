@@ -1,7 +1,10 @@
 #include <stdlib.h>
 #include <stdio.h>
-int main(void)
+/**
+* main-a program that prints the name of the file
+* Return : void
+*/
+void main(void)
 {
-printf("%s\n",__FILE__);
-return (0);
+printf("%s\n", __FILE__);
 }
