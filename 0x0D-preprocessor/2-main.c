@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * main-a program that prints the name of the file
-* Return : success always 0
+* Return: success always 0
 */
 int main(void)
 {
