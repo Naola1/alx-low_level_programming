@@ -1,27 +1,25 @@
-#include <stdlib.h>
+#include "function_pointers.h"
 #include <stdio.h>
-#include "3-calc.h"
-
 /**
- * main - main file
- * @argc: number of lines arguments
- * @argv: array of elements
- * Return: 0
+ * array_iterator - Function
+ *
+ * Description: executes a function given as a parameter on
+ * each element of an array.
+ *
+ * @array: pointer parameter of type int
+ * @size: size of the array
+ * @action: pointer function
  */
-
-int main(int argc, char *argv[])
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int R;
+	if (!array || !action)
+		return;
 
-	if (argc != 4)
+	while (size > 0)
 	{
-		printf("Error\n");
-		exit(98);
+		(*action)(*array);
+		array++;
+		size--;
 	}
-
-	R = (*get_op_func(argv[2]))(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", R);
-
-	return (0);
 }
 
